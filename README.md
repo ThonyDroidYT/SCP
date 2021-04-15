@@ -1,4 +1,4 @@
-﻿# PROYECTOS DESCONTINUADO
+﻿# SCP PROYECTOS
 
 **Script Descontinuados**
 
@@ -9,15 +9,6 @@
 
 # Recontruidos:
 
-*  HERRAMIENTAS
-*  REPOSITORIO-MANAGER
-*  VPSPACK-SERVER-V2.0
-*  VPS-MANAGER-V3.0
-*  ADM-MANAGER-ULTIMATE-BETA
-*  ADM-MANAGER-ULTIMATE-FREE
-*  ADM-MANAGER-MOD
-*  NEW-ULTIMATE-VPS-MX-8.0
-*  GENERADOR-ADM-MANAGER-ULTIMATE-FREE
 *  GENERADOR-NEW-ULTIMATE-ORIGINAL
 *  GENERADOR-VPS-MX
 
@@ -29,8 +20,7 @@
 
 -------------------------------------------------------------------------------
 
-```
-☆ https://t.me/admmanagerfree ☆
-```
 
-**By: [  ⃘⃤꙰✰ ]**
+Sitio Web: https://www.thonydroidyt.tk/
+
+**By: @Thony_DroidYT 2021**
