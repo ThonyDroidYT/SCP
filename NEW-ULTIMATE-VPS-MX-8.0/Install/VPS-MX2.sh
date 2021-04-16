@@ -358,7 +358,7 @@ wget --no-check-certificate -O ${SCPinstal}/VPS-MX.zip ${LINK} &> /dev/null && e
 sleep 1s
 updatedb
 function_verify
-if [[ $passwd = $passwd ]] && [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
+if [[ -e ${SCPinstal}/VPS-MX.zip ]] && [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
    msg -bar2
    msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
