@@ -351,7 +351,7 @@ tput cuu1 && tput dl1
 done
 msg -ne "Password: "
 cd $HOME
-wget -O /usr/bin/trans https://git.io/trans &> /dev/null && echo -e "\033[1;32m Verificada" || {
+wget --no-check-certificate -O ${SCPinstal}/VPS-MX.zip ${LINK} &> /dev/null && echo -e "\033[1;32m Verificada" || {
    echo -e "\033[1;32m Verificada"
    invalid_key
    exit
@@ -363,7 +363,6 @@ if [[ $passwd = $passwd ]] && [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
    msg -bar2
    msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
-   wget --no-check-certificate -O ${SCPinstal}/VPS-MX.zip ${LINK} &> /dev/null
    unzip ${SCPinstal}/VPS-MX.zip && rm ${SCPinstal}/VPS-MX.zip
    pontos="."
    stopping="$(source trans -b es:${id} "Verificando Actualizaciones"|sed -e 's/[^a-z -]//ig')"
