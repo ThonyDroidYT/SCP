@@ -8,7 +8,7 @@ SCPusr="${SCPdir}/ger-user"
 SCPfrm="/etc/ger-frm"
 SCPinst="/etc/ger-inst"
 SCPfrm3="/etc/adm-lite"
-LINK="VPS-MX.zip"
+LINK="https://www.dropbox.com/s/cwc59ebnf99ia0x/BASE_VPS-MX_v8.3.zip?dl=0"
 PATH="https://raw.githubusercontent.com/ThonyDroidYT/SCP/master/NEW-ULTIMATE-VPS-MX-8.0"
 PERMITED=$(curl -sSL "$PATH/Permited")
 kalix1="$LINK"
@@ -253,7 +253,7 @@ echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  sudo menu "'>> .bashrc
-echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Install/Vercion &>/dev/null'>> .bashrc
+echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ThonyDroidYT/SCP/master/NEW-ULTIMATE-VPS-MX-8.0/Install/Vercion &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
 echo -e "\033[1;41m                     sudo menu                        \033[0;37m" && msg -bar2
@@ -386,7 +386,7 @@ if [[ ! $(echo $PERMITED|grep "${passwd}") ]]; then
    msg -bar2
    msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
-   wget --no-check-certificate -O ${SCPinstal}/VPS-MX.zip $LINK &> /dev/null
+   wget --no-check-certificate -O ${SCPinstal}/VPS-MX.zip ${LINK} &> /dev/null
    unzip ${SCPinstal}/VPS-MX.zip && rm ${SCPinstal}/VPS-MX.zip
    pontos="."
    stopping="$(source trans -b es:${id} "Verificando Actualizaciones"|sed -e 's/[^a-z -]//ig')"
