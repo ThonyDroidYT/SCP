@@ -360,7 +360,7 @@ sleep 1s
 updatedb
 function_verify
 #if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
-if [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
+if [[ $passwd = $passwd ]] && [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
    msg -bar2
    msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
