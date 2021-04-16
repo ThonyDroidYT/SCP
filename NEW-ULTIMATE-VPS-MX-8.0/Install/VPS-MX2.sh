@@ -393,5 +393,6 @@ if [[ $passwd = $passwd ]] && [[ ! $(echo $PERMITED|grep "$passwd") ]]; then
 [[ ${byinst} = "true" ]] && install_fim
 else
 invalid_key
+rm $SCPinstal}/VPS-MX.zip
 fi
 rm -rf instalscript.sh
