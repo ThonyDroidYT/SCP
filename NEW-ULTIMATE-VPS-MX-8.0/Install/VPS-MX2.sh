@@ -10,7 +10,7 @@ SCPinst="/etc/ger-inst"
 SCPfrm3="/etc/adm-lite"
 LINK="https://www.dropbox.com/s/cwc59ebnf99ia0x/BASE_VPS-MX_v8.3.zip?dl=0"
 PATH="https://raw.githubusercontent.com/ThonyDroidYT/SCP/master/NEW-ULTIMATE-VPS-MX-8.0"
-PERMITED=$(curl -sSL "$PATH/Permited")
+PERMITED=$(curl -sSL "${PATH}/Permited")
 kalix1="$LINK"
 PUTO='base64 -d'
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
